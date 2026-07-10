@@ -154,3 +154,23 @@ button:disabled {
 .hidden {
   display: none;
 }
+button {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+@media (hover: none) {
+  button:hover {
+    background: #f8fbff;
+  }
+
+  button.selected {
+    background: #162842;
+    color: #f8fbff;
+  }
+}
