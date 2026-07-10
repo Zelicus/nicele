@@ -55,6 +55,10 @@ button {
   background: #f8fbff;
   color: #162842;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button:hover {
@@ -154,23 +158,56 @@ button:disabled {
 .hidden {
   display: none;
 }
-button {
+
+* {
   -webkit-tap-highlight-color: transparent;
-  user-select: none;
-  touch-action: manipulation;
 }
 
-button:active {
-  transform: scale(0.96);
-}
-
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse) {
   button:hover {
     background: #f8fbff;
+  }
+
+  button:active {
+    background: #c4d8ee;
+    transform: none;
   }
 
   button.selected {
     background: #162842;
     color: #f8fbff;
+  }
+
+  button.selected:hover {
+    background: #162842;
+    color: #f8fbff;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 24px 14px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  #current-number {
+    font-size: 64px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 14px 18px;
+    margin: 5px;
+  }
+
+  .history-item {
+    font-size: 16px;
+  }
+
+  .end-screen {
+    padding: 24px 16px;
   }
 }
