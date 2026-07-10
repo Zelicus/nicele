@@ -186,25 +186,59 @@ button:disabled {
 
 @media (max-width: 600px) {
   body {
-    padding: 24px 14px;
+    padding: 28px 14px 80px 14px;
   }
 
   h1 {
-    font-size: 44px;
+    font-size: 42px;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+  }
+
+  #puzzle-label {
+    font-size: 18px;
+  }
+
+  #instructions {
+    font-size: 16px;
+    margin-bottom: 18px;
   }
 
   #current-number {
-    font-size: 64px;
+    font-size: 62px;
+    margin: 14px 0;
   }
 
   button {
     font-size: 20px;
-    padding: 14px 18px;
+    padding: 12px 16px;
     margin: 5px;
+  }
+
+  #apply-button {
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+
+  #history {
+    max-width: 100%;
   }
 
   .history-item {
     font-size: 16px;
+  }
+
+  .feedback-pill {
+    font-size: 13px;
   }
 
   .end-screen {
