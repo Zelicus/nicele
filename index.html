@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Nice!le</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Nice!le</h1>
+
+    <section id="game-screen">
+      <p id="puzzle-label"></p>
+      <p id="instructions"></p>
+
+      <p>Current number:</p>
+      <h2 id="current-number"></h2>
+
+      <p>Moves: <span id="move-count">0</span> / <span id="max-moves">10</span></p>
+
+      <h3>Choose operation</h3>
+      <div class="button-row">
+        <button class="move-button choice-button" data-operation="add" onclick="chooseOperation('add')">+</button>
+        <button class="move-button choice-button" data-operation="subtract" onclick="chooseOperation('subtract')">-</button>
+        <button class="move-button choice-button" data-operation="multiply" onclick="chooseOperation('multiply')">×</button>
+        <button class="move-button choice-button" data-operation="divide" onclick="chooseOperation('divide')">÷</button>
+      </div>
+
+      <h3>Choose number</h3>
+      <div class="button-row">
+        <button class="move-button choice-button" data-number="6" onclick="chooseNumber(6)">6</button>
+        <button class="move-button choice-button" data-number="9" onclick="chooseNumber(9)">9</button>
+        <button class="move-button choice-button" data-number="69" onclick="chooseNumber(69)">69</button>
+      </div>
+
+      <p>Selected move: <span id="selected-move">none</span></p>
+
+      <button id="apply-button" onclick="applyMove()">Apply Move</button>
+
+      <p id="message"></p>
+
+      <h3>Move History</h3>
+      <ul id="history"></ul>
+
+      <button onclick="resetGame()">Reset</button>
+    </section>
+
+    <section id="win-screen" class="end-screen hidden">
+      <h2>Nice!</h2>
+      <p id="win-summary"></p>
+      <p id="win-grid" class="share-grid"></p>
+
+      <button onclick="shareResults()">Share Results</button>
+      <p id="share-status"></p>
+
+      <button onclick="resetGame()">Play Again</button>
+    </section>
+
+    <section id="loss-screen" class="end-screen hidden">
+      <h2>Out of moves</h2>
+      <p>You did not reach 69 this time.</p>
+
+      <button onclick="resetGame()">Try Again</button>
+
+      <p>Next Nice!le in:</p>
+      <p id="countdown"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #d6e2f0;
+  color: #162842;
+  text-align: center;
+  padding: 40px;
+}
+
+.app {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+#puzzle-label {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+#instructions {
+  max-width: 520px;
+  margin: 0 auto 24px auto;
+  line-height: 1.4;
+}
+
+#current-number {
+  font-size: 72px;
+  margin: 20px 0;
+  color: #162842;
+}
+
+.button-row {
+  margin-bottom: 8px;
+}
+
+button {
+  font-size: 20px;
+  padding: 12px 18px;
+  margin: 6px;
+  border-radius: 10px;
+  border: 2px solid #162842;
+  background: #f8fbff;
+  color: #162842;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c4d8ee;
+}
+
+button.selected {
+  background: #162842;
+  color: #f8fbff;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+#apply-button {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#message {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 24px;
+  min-height: 28px;
+}
+
+#history {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 25px auto;
+  font-size: 18px;
+  max-width: 500px;
+}
+
+.history-item {
+  background: #f8fbff;
+  border: 2px solid #162842;
+  border-left-width: 12px;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.history-top-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.feedback-pill {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #d6e2f0;
+}
+
+.feedback-green {
+  border-left-color: #2f8f5b;
+}
+
+.feedback-yellow {
+  border-left-color: #d6a531;
+}
+
+.feedback-red {
+  border-left-color: #b84646;
+}
+
+.end-screen {
+  background: #f8fbff;
+  border: 2px solid #162842;
+  border-radius: 18px;
+  padding: 28px;
+  margin-top: 30px;
+}
+
+.share-grid {
+  font-size: 32px;
+  letter-spacing: 4px;
+}
+
+#share-status {
+  font-weight: bold;
+  min-height: 24px;
+}
+
+#countdown {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
