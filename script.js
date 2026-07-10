@@ -1,6 +1,6 @@
 const puzzle = {
   number: 2,
-  startNumber: 4761,
+  startNumber: 97,
   targetNumber: 69,
   maxMoves: 10
 };
